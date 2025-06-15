@@ -64,3 +64,13 @@ button:active {
   transform: scale(0.98);
   background-color: #ccc;
 }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
