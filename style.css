@@ -31,46 +31,20 @@ button {
   cursor: pointer;
   background-color: #eee;
   transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent; /* Remove blue flash on tap */
+  outline: none; /* Remove default focus outline */
 }
 
 button:hover {
   background-color: #ddd;
 }
 
-@media (max-width: 900px) {
-  button {
-    width: 90%;
-    font-size: 18px;
-    padding: 14px;
-    border-radius: 12px;
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1rem;
-    text-align: center;
-  }
+button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 button:active {
   transform: scale(0.98);
   background-color: #ccc;
-}
-
-button {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-}
-
-button:focus {
-  outline: none;
-  box-shadow: none;
 }
