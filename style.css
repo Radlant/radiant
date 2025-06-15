@@ -36,3 +36,26 @@ button {
 button:hover {
   background-color: #ddd;
 }
+
+@media (max-width: 600px) {
+  button {
+    width: 90%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
